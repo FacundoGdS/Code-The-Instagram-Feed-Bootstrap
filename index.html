@@ -8,65 +8,221 @@
   <title>The Instagram Photo Feed (with Bootstrap)</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/d447cd7c8c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <!-- Image and text -->
   <nav class="navbar navbar-light" style="background-color: #E6E8E2;">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand ajuste1" href="#">
       <img id="ig1" src="/Images/IG1.png" alt="">
       <img id="ig2" src="/Images/IG2.png" alt="">
     </a>
-    <div class="btn" aria-label="Button group with nested dropdown">
+    <div class="btn ajuste2" aria-label="Button group with nested dropdown">
       <!-- Button trigger modal -->
-<button type="button" class="btn colorGreen" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Create a new post
-</button>
+      <button type="button" class="btn colorGreen" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Create a new post
+      </button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <input type="text" class="bitLarge" placeholder="           Upload a photo or share your location...">
+              <div class="ps">
+                <span class="fas fa-camera fa-2x ps"></span>
+                <span class="fas fa-globe fa-2x ps"></span>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn colorGreen">Publish</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        <input type="text" class="bitLarge">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn colorGreen">Publish</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-      <div class="btn">
-        <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-toggle="dropdown"
-          aria-expanded="false">
+      <div class="btn-group">
+        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           <img id="setting" src="/Images/setting.png">
         </button>
-        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-          <a class="dropdown-item" href="#">Dropdown link</a>
-          <a class="dropdown-item" href="#">Dropdown link</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-light" style="background-color: whitesmoke;">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="display: flex; margin: auto;">
+      <li class="nav-item" role="presentation">
+        <button id="height" class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"
+          style="margin-right: 1px;">
+          <img id="grid" src="/Images/grid.png">
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false" style="margin-left: 1px;">
+          <i class="fas fa-square fa-2x"></i>
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="container">
+        <div class="container">
+          <div class="row row-cols-3">
+            <div class="col feed1">
+              <img class="ajust" src="/Images/Photos/photo1.jpg">
+            </div>
+            <div class="col feed1">
+              <img class="ajust" src="/Images/Photos/photo2.jpg">
+            </div>
+            <div class="col feed1">
+              <img class="ajust" src="/Images/Photos/photo3.jpg">
+            </div>
+            <div class="col feed1">
+              <img class="ajust" src="/Images/Photos/photo4.jpg">
+            </div>
+            <div class="col feed1">
+              <img class="ajust" src="/Images/Photos/photo5.jpg">
+            </div>
+            <div class="col feed1">
+              <img class="ajust" src="/Images/Photos/photo6.jpg">
+            </div>
+            <div class="col feed1">
+              <img class="ajust" src="/Images/Photos/photo10.jpg">
+            </div>
+            <div class="col feed1">
+              <img class="ajust" src="/Images/Photos/photo8.jpg">
+            </div>
+            <div class="col feed1">
+              <img class="ajust" src="/Images/Photos/photo9.jpg">
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </nav>
-
-  <nav class="navbar navbar-light" style="background-color: grey;">
-   
-  </nav>
-  
-  <div class="container">
-    <h1>Probando</h1>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+    <div class="tab-pane fade row-cols-3" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="card mb-3 mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">First photo</h5>
+        </div>
+        <img src="/Images/Photos/photo1.jpg" class="card-img-top ajFeed" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">23 likes</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card mb-3 mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Second photo</h5>
+        </div>
+        <img src="/Images/Photos/photo2.jpg" class="card-img-top ajFeed" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">56 likes</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card mb-3 mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Third photo</h5>
+        </div>
+        <img src="/Images/Photos/photo3.jpg" class="card-img-top ajFeed" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">60 likes</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card mb-3 mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Fourth photo</h5>
+        </div>
+        <img src="/Images/Photos/photo4.jpg" class="card-img-top ajFeed" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">43 likes/h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card mb-3 mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Fifth photo</h5>
+        </div>
+        <img src="/Images/Photos/photo5.jpg" class="card-img-top ajFeed" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">52 likes</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card mb-3 mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Sixth photo</h5>
+        </div>
+        <img src="/Images/Photos/photo6.jpg" class="card-img-top ajFeed" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">67 likes</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card mb-3 mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Seventh photo</h5>
+        </div>
+        <img src="/Images/Photos/photo10.jpg" class="card-img-top ajFeed" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">34 likes</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card mb-3 mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Eigth photo</h5>
+        </div>
+        <img src="/Images/Photos/photo8.jpg" class="card-img-top ajFeed" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">121 likes</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card mb-3 mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ninth photo</h5>
+        </div>
+        <img src="/Images/Photos/photo9.jpg" class="card-img-top ajFeed" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">70 likes</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
